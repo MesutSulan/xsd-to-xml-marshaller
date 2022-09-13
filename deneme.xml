@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:FATCA_OECD xmlns:ns2="urn:oecd:ties:fatca:v2" xmlns:ns3="urn:oecd:ties:stffatcatypes:v2">
+    <ns2:MessageSpec>
+        <ns3:SendingCompanyIN>İş Yatırım</ns3:SendingCompanyIN>
+        <ns3:ReceivingCountry>TR</ns3:ReceivingCountry>
+        <ns3:MessageRefId>message ref ID</ns3:MessageRefId>
+    </ns2:MessageSpec>
+    <ns2:FATCA>
+        <ns2:ReportingFI>
+            <ns2:FilerCategory>FATCA601</ns2:FilerCategory>
+            <ns2:DocSpec>
+                <ns2:DocTypeIndic>FATCA1</ns2:DocTypeIndic>
+                <ns2:DocRefId>doc ref id deneme</ns2:DocRefId>
+                <ns2:CorrMessageRefId>message deneme</ns2:CorrMessageRefId>
+                <ns2:CorrDocRefId>deneme</ns2:CorrDocRefId>
+            </ns2:DocSpec>
+        </ns2:ReportingFI>
+        <ns2:ReportingGroup>
+            <ns2:AccountReport>
+                <ns2:AccountNumber AcctNumberType="OECD601">546545456</ns2:AccountNumber>
+                <ns2:AccountClosed>false</ns2:AccountClosed>
+                <ns2:AccountHolder>
+                    <ns2:AcctHolderType>FATCA101</ns2:AcctHolderType>
+                </ns2:AccountHolder>
+                <ns2:AccountBalance currCode="TRY">5000</ns2:AccountBalance>
+                <ns2:Payment>
+                    <ns2:Type>FATCA503</ns2:Type>
+                    <ns2:PaymentTypeDesc>payment desc</ns2:PaymentTypeDesc>
+                    <ns2:PaymentAmnt currCode="TRY">5000</ns2:PaymentAmnt>
+                </ns2:Payment>
+                <ns2:CARRef>
+                    <ns2:PoolReportReportingFIGIIN>Pool Reporting</ns2:PoolReportReportingFIGIIN>
+                    <ns2:PoolReportMessageRefId>Pool Report Message</ns2:PoolReportMessageRefId>
+                    <ns2:PoolReportDocRefId>Report Document</ns2:PoolReportDocRefId>
+                </ns2:CARRef>
+            </ns2:AccountReport>
+        </ns2:ReportingGroup>
+        <AddressType legalAddressType="OECD301">
+            <CountryCodeType>CA</CountryCodeType>
+            <AddressFixType>
+                <ns3:Street>Aşağı mahalle</ns3:Street>
+                <ns3:PostCode>070400</ns3:PostCode>
+                <ns3:City>Mexico</ns3:City>
+            </AddressFixType>
+        </AddressType>
+    </ns2:FATCA>
+</ns2:FATCA_OECD>
